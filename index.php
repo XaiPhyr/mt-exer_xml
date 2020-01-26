@@ -1,12 +1,12 @@
 <?php
 
 switch ($_GET['page']) {
-    case 'raw':
+    default:
         include("controllers/index.php");
         $index->index();
         break;
 
-    default:
+    case 'rss':
         include("controllers/index.php");
         $index->rss();
         break;
